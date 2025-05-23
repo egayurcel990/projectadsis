@@ -1,0 +1,52 @@
+version: '3.8'
+
+services:
+  website-a:
+    build:
+      context: ./website-a
+      dockerfile: Dockerfile
+    container_name: website_a
+    ports:
+      - "8001:80"
+    volumes:
+      - ./website-a:/var/www/html:cached
+    depends_on:
+      - mysql
+    environment:
+      DB_HOST: mysql
+      DB_DATABASE: projekadsis
+      DB_USERNAME: root
+      DB_PASSWORD: root
+
+  website-b:
+    build:
+      context: ./website-b
+      dockerfile: Dockerfile
+    container_name: website_b
+    ports:
+      - "8002:80"
+    volumes:
+      - ./website-b:/var/www/html
+    depends_on:
+      - mysql
+    environment:
+      DB_HOST: mysql
+      DB_DATABASE: projekadsis
+      DB_USERNAME: root
+      DB_PASSWORD: root
+
+  mysql:
+    image: mysql:8
+    container_name: mysql_projek
+    restart: unless-stopped
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: projekadsis
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:
+
