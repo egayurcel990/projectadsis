@@ -7,13 +7,13 @@
         <div class="col-md-10">
             <div class="card">
                 <div class="card-header bg-primary text-white">
-                    <h4 class="mb-0">Leave Request Status</h4>
+                    <h4 class="mb-0">Status Perizinan</h4>
                 </div>
                 <div class="card-body">
                     <form action="{{ route('leave.history') }}" method="GET" class="mb-4">
                         <div class="input-group">
                             <input type="text" class="form-control" name="nim" placeholder="Enter your NIM" value="{{ $nim }}">
-                            <button class="btn btn-primary" type="submit">Search</button>
+                            <button class="btn btn-primary" type="submit">Cari</button>
                         </div>
                     </form>
 
@@ -25,9 +25,9 @@
                         <table class="table table-striped">
                             <thead>
                                 <tr>
-                                    <th>Request Date</th>
-                                    <th>Leave Period</th>
-                                    <th>Reason</th>
+                                    <th>Tanggal Permohonan</th>
+                                    <th>Waktu perizinan</th>
+                                    <th>Keterangan</th>
                                     <th>Status</th>
                                 </tr>
                             </thead>

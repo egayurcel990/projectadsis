@@ -16,13 +16,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('employees.index') }}">Employees</a>
+                        <a class="nav-link" href="{{ route('employees.index') }}">Mahasiswa</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('attendances.index') }}">Attendances</a>
+                        <a class="nav-link" href="{{ route('attendances.index') }}">Kehadiran</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('leave-requests.index') }}">Leave Requests</a>
+                        <a class="nav-link" href="{{ route('leave-requests.index') }}">Perizinan</a>
                     </li>
                 </ul>
             </div>

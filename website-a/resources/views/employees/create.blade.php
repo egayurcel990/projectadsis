@@ -4,8 +4,8 @@
 
 @section('content')
     <div class="d-flex justify-content-between align-items-center mb-4">
-        <h1>Add New Employee</h1>
-        <a href="{{ route('employees.index') }}" class="btn btn-secondary">Back to List</a>
+        <h1>Tambah Mahasiswa</h1>
+        <a href="{{ route('employees.index') }}" class="btn btn-secondary">Kembali</a>
     </div>
 
     <div class="card">
@@ -22,14 +22,14 @@
                 </div>
 
                 <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
+                    <label for="name" class="form-label">Nama</label>
                     <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" value="{{ old('name') }}" required>
                     @error('name')
                         <div class="invalid-feedback">{{ $message }}</div>
                     @enderror
                 </div>
 
-                <button type="submit" class="btn btn-primary">Save Employee</button>
+                <button type="submit" class="btn btn-primary">Simpan</button>
             </form>
         </div>
     </div>

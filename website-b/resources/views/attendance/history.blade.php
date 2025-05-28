@@ -7,13 +7,13 @@
         <div class="col-md-10">
             <div class="card">
                 <div class="card-header bg-primary text-white">
-                    <h4 class="mb-0">Attendance History</h4>
+                    <h4 class="mb-0">Riwayat Kehadiran</h4>
                 </div>
                 <div class="card-body">
                     <form action="{{ route('attendance.history') }}" method="GET" class="mb-4">
                         <div class="input-group">
                             <input type="text" class="form-control" name="nim" placeholder="Enter your NIM" value="{{ $nim }}">
-                            <button class="btn btn-primary" type="submit">Search</button>
+                            <button class="btn btn-primary" type="submit">Cari</button>
                         </div>
                     </form>
 
@@ -25,9 +25,9 @@
                         <table class="table table-striped">
                             <thead>
                                 <tr>
-                                    <th>Date</th>
+                                    <th>Tanggal</th>
                                     <th>Status</th>
-                                    <th>Notes</th>
+                                    <th>Keterangan</th>
                                 </tr>
                             </thead>
                             <tbody>

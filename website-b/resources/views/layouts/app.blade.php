@@ -9,7 +9,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
-            <a class="navbar-brand" href="/">Employee Portal</a>
+            <a class="navbar-brand" href="/">Portal Mahasiswa</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -17,20 +17,20 @@
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="attendanceDropdown" role="button" data-bs-toggle="dropdown">
-                            Attendance
+                            Kehadiran
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="{{ route('attendance.form') }}">Submit Attendance</a></li>
-                            <li><a class="dropdown-item" href="{{ route('attendance.history') }}">View History</a></li>
+                            <li><a class="dropdown-item" href="{{ route('attendance.form') }}">Form Kehadiran</a></li>
+                            <li><a class="dropdown-item" href="{{ route('attendance.history') }}">Lihat Riwayat</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="leaveDropdown" role="button" data-bs-toggle="dropdown">
-                            Leave Request
+                            Perizinan
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="{{ route('leave.form') }}">Request Leave</a></li>
-                            <li><a class="dropdown-item" href="{{ route('leave.history') }}">View Status</a></li>
+                            <li><a class="dropdown-item" href="{{ route('leave.form') }}">Form perizinan</a></li>
+                            <li><a class="dropdown-item" href="{{ route('leave.history') }}">Lihat Status</a></li>
                         </ul>
                     </li>
                 </ul>

@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="d-flex justify-content-between align-items-center mb-4">
-        <h1>Attendance List</h1>
+        <h1>List Kehadiran</h1>
     </div>
 
     <div class="card mb-4">
@@ -28,9 +28,9 @@
                 <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Employee</th>
+                        <th>Nama</th>
                         <th>NIM</th>
-                        <th>Date</th>
+                        <th>Tanggal</th>
                         <th>Status</th>
                         <th>Notes</th>
                     </tr>

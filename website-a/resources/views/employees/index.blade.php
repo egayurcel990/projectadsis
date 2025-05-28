@@ -4,8 +4,8 @@
 
 @section('content')
     <div class="d-flex justify-content-between align-items-center mb-4">
-        <h1>Employee List</h1>
-        <a href="{{ route('employees.create') }}" class="btn btn-primary">Add New Employee</a>
+        <h1>List Mahasiswa</h1>
+        <a href="{{ route('employees.create') }}" class="btn btn-primary">Tambah Mahasiswa</a>
     </div>
 
     <div class="card">
@@ -15,8 +15,8 @@
                     <tr>
                         <th>ID</th>
                         <th>NIM</th>
-                        <th>Name</th>
-                        <th>Actions</th>
+                        <th>Nama</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
