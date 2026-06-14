@@ -183,7 +183,7 @@ Make sure the following are installed on your machine:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/egayurcel990/projectadsis.git
+git clone https://github.com/marquisccel/projectadsis.git
 cd projectadsis
 ```
 
@@ -288,4 +288,4 @@ docker exec -it mysql_projek mysql -u root -p
 
 ---
 
-**Ega Yurcel Satriaji - 235150700111031** — [@egayurcel990](https://github.com/egayurcel990)
+**Ega Yurcel Satriaji - 235150700111031** — [@marquisccel](https://github.com/marquisccel)
